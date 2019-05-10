@@ -1,15 +1,16 @@
+package bf.sonabel.facturation;
 public class TestFacture {
 
   public static void main(String[] args) {
-    // Création des articles
+    // Cr?ation des articles
     Stylo s1 = new Stylo("s1", "Stylo jade", "Noir", "Watertruc", 500);
     Stylo s2 = new Stylo("s2", "Stylo or", "Or", "Marker", 1000);
-    Ramette r1 = new Ramette("r1", "Ramette haute qualité", 80, "Clairefont", 95);
+    Ramette r1 = new Ramette("r1", "Ramette haute qualit?", 80, "Clairefont", 95);
 
-    // Création des lots (10 % de réduction)
+    // Cr?ation des lots (10 % de r?duction)
     Lot l1 = new Lot("l1", s2, 5, 10);
 
-    // Création d'une facture
+    // Cr?ation d'une facture
     Facture f1 = new Facture("Toto", "21/9/99");
 
     // Ajout des lignes de la commande
@@ -20,7 +21,7 @@ public class TestFacture {
     // Afficher la facture
     System.out.println(f1);
 
-    // Création d'une autre facture
+    // Cr?ation d'une autre facture
     Facture f2 = new Facture("Bibi", "21/9/99");
 
     // Ajout des lignes de la commande
@@ -33,7 +34,7 @@ public class TestFacture {
 
     // Test prix d'un lot
     s2.setPU(1200);
-    System.out.println("\nAffiche la 1ère facture après changement de prix");
+    System.out.println("\nAffiche la 1?re facture apr?s changement de prix");
     System.out.println(f1);
     
   }
